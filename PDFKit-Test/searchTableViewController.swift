@@ -65,7 +65,7 @@ class SearchTableViewController: UITableViewController {
         
         let outlintstr = outline?.label ?? ""
         let pagestr = page.label ?? ""
-        let txt = outlintstr + " 页码:  " + pagestr
+        let txt = outlintstr + " Número de página:  " + pagestr
         cell.destinationLabel.text = txt
         
         let extendSelection = selection.copy() as! PDFSelection
