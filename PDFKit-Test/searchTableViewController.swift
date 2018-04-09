@@ -23,7 +23,7 @@ class SearchTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rowHeight = 150
+        tableView.rowHeight = 151
         
         searchBar.delegate = self
         searchBar.showsCancelButton = true
