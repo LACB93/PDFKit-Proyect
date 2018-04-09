@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchViewCell" customModule="PDFKit_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="155"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMy-fJ-WVU">
+                    <rect key="frame" x="0.0" y="19" width="306" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.61568627450000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxj-Pq-O16">
+                    <rect key="frame" x="0.0" y="46" width="306" height="109"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="109" id="1nK-Qb-6vE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jxj-Pq-O16" secondAttribute="trailing" id="3sE-JH-PeK"/>
+                <constraint firstItem="Jxj-Pq-O16" firstAttribute="trailing" secondItem="BMy-fJ-WVU" secondAttribute="trailing" id="4wv-hZ-OKI"/>
+                <constraint firstItem="Jxj-Pq-O16" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="87V-vg-yVP"/>
+                <constraint firstItem="Jxj-Pq-O16" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="FXa-tQ-1mN"/>
+                <constraint firstItem="Jxj-Pq-O16" firstAttribute="top" secondItem="BMy-fJ-WVU" secondAttribute="bottom" constant="7" id="R0h-b0-BHK"/>
+                <constraint firstItem="Jxj-Pq-O16" firstAttribute="top" secondItem="BMy-fJ-WVU" secondAttribute="bottom" constant="7" id="kBP-aq-mv6"/>
+                <constraint firstItem="Jxj-Pq-O16" firstAttribute="leading" secondItem="BMy-fJ-WVU" secondAttribute="leading" id="n40-Fn-afw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="destinationLabel" destination="BMy-fJ-WVU" id="dGr-MJ-nUG"/>
+                <outlet property="resultTextLabel" destination="Jxj-Pq-O16" id="Q3v-b0-9nS"/>
+            </connections>
+            <point key="canvasLocation" x="-159" y="-159.5"/>
+        </view>
+    </objects>
+</document>
