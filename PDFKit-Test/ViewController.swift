@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         self.view.addSubview(toolView)
         toolView.bringSubview(toFront: self.view)
         toolView.searchBtn.addTarget(self, action: #selector(searchBtnClick), for: .touchUpInside)
+        toolView.outlineBtn.addTarget(self, action: #selector(outlineBtnClick), for: .touchUpInside)
         
     }
     
@@ -43,6 +44,19 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: CATransaction.animationDuration()) { [weak self] in
             self?.toolView.alpha = 1 - (self?.toolView.alpha)!
         }
+    }
+    
+    @objc func outlineBtnClick(sender: UIButton) {
+        
+        if let pdfoutline = pdfdocument?.outlineRoot {
+            let oulineViewController = OulineTableviewController(style: UITableViewStyle.plain)
+            oulineViewController.pdfOutlineRoot = pdfoutline
+            oulineViewController.delegate = self as OulineTableviewControllerDelegate
+            
+            let nav = UINavigationController(rootViewController: oulineViewController)
+            self.present(nav, animated: false, completion:nil)
+        }
+        
     }
     
     
@@ -58,6 +72,15 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+}
+
+extension ViewController: OulineTableviewControllerDelegate {
+    func oulineTableviewController(_ oulineTableviewController: OulineTableviewController, didSelectOutline outline: PDFOutline) {
+        let action = outline.action
+        if let actiongoto = action as? PDFActionGoTo {
+            pdfview.go(to: actiongoto.destination)
+        }
     }
 }
 

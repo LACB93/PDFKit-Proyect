@@ -11,6 +11,7 @@ import UIKit
 class ToolView: UIView {
     
     @IBOutlet weak var searchBtn: UIButton!
+    @IBOutlet weak var outlineBtn: UIButton!
     
     class func instanceFromNib() -> ToolView {
         return UINib(nibName: "ToolView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! ToolView

@@ -13,30 +13,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ToolView" customModule="PDFKit_Test" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="56" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="154" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Om-Rw-GNz">
-                    <rect key="frame" x="0.0" y="0.0" width="56" height="44"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Om-Rw-GNz">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" image="search"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vr3-NW-lyO">
+                    <rect key="frame" x="78" y="-4" width="76" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="outline"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="5Om-Rw-GNz" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="3ve-rO-0W0"/>
-                <constraint firstItem="5Om-Rw-GNz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4Nb-XR-hKl"/>
-                <constraint firstItem="5Om-Rw-GNz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Xoe-g8-l5a"/>
-                <constraint firstItem="5Om-Rw-GNz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dBO-hj-I0o"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="outlineBtn" destination="Vr3-NW-lyO" id="JeV-fZ-gdn"/>
                 <outlet property="searchBtn" destination="5Om-Rw-GNz" id="wrC-Xg-5hN"/>
             </connections>
-            <point key="canvasLocation" x="3" y="-230"/>
+            <point key="canvasLocation" x="52" y="-230"/>
         </view>
     </objects>
     <resources>
+        <image name="outline" width="24" height="24"/>
         <image name="search" width="24" height="24"/>
     </resources>
 </document>

@@ -20,6 +20,10 @@
 		C0185052207BBFD6003526A2 /* iOSCourse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C0185051207BBFD6003526A2 /* iOSCourse.pdf */; };
 		C0185054207BC029003526A2 /* SearchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0185053207BC029003526A2 /* SearchViewCell.xib */; };
 		C0185056207BC292003526A2 /* ToolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0185055207BC292003526A2 /* ToolView.xib */; };
+		C018506C207D164B003526A2 /* OulineTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018506B207D164B003526A2 /* OulineTableviewController.swift */; };
+		C018506E207D16C3003526A2 /* OulineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018506D207D16C3003526A2 /* OulineTableViewCell.swift */; };
+		C0185070207D16DC003526A2 /* OulineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C018506F207D16DC003526A2 /* OulineTableViewCell.xib */; };
+		C0185074207D20B6003526A2 /* OulineTableviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0185073207D20B6003526A2 /* OulineTableviewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		C0185051207BBFD6003526A2 /* iOSCourse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = iOSCourse.pdf; path = ../../../../Downloads/iOSCourse.pdf; sourceTree = "<group>"; };
 		C0185053207BC029003526A2 /* SearchViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewCell.xib; sourceTree = "<group>"; };
 		C0185055207BC292003526A2 /* ToolView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolView.xib; sourceTree = "<group>"; };
+		C018506B207D164B003526A2 /* OulineTableviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OulineTableviewController.swift; sourceTree = "<group>"; };
+		C018506D207D16C3003526A2 /* OulineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OulineTableViewCell.swift; sourceTree = "<group>"; };
+		C018506F207D16DC003526A2 /* OulineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OulineTableViewCell.xib; sourceTree = "<group>"; };
+		C0185073207D20B6003526A2 /* OulineTableviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OulineTableviewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,10 @@
 				C018501F207BBCD7003526A2 /* ViewController.swift */,
 				C018504B207BBD86003526A2 /* searchTableViewController.swift */,
 				C018504F207BBF0F003526A2 /* ToolView.swift */,
+				C018506B207D164B003526A2 /* OulineTableviewController.swift */,
+				C0185073207D20B6003526A2 /* OulineTableviewController.xib */,
+				C018506D207D16C3003526A2 /* OulineTableViewCell.swift */,
+				C018506F207D16DC003526A2 /* OulineTableViewCell.xib */,
 				C0185021207BBCD7003526A2 /* Main.storyboard */,
 				C0185055207BC292003526A2 /* ToolView.xib */,
 				C0185053207BC029003526A2 /* SearchViewCell.xib */,
@@ -251,11 +263,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0185054207BC029003526A2 /* SearchViewCell.xib in Resources */,
+				C0185074207D20B6003526A2 /* OulineTableviewController.xib in Resources */,
 				C0185028207BBCD7003526A2 /* LaunchScreen.storyboard in Resources */,
 				C0185052207BBFD6003526A2 /* iOSCourse.pdf in Resources */,
 				C0185025207BBCD7003526A2 /* Assets.xcassets in Resources */,
 				C0185056207BC292003526A2 /* ToolView.xib in Resources */,
 				C0185023207BBCD7003526A2 /* Main.storyboard in Resources */,
+				C0185070207D16DC003526A2 /* OulineTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +296,9 @@
 			files = (
 				C018504E207BBDB3003526A2 /* SearchViewCell.swift in Sources */,
 				C0185020207BBCD7003526A2 /* ViewController.swift in Sources */,
+				C018506E207D16C3003526A2 /* OulineTableViewCell.swift in Sources */,
 				C0185050207BBF0F003526A2 /* ToolView.swift in Sources */,
+				C018506C207D164B003526A2 /* OulineTableviewController.swift in Sources */,
 				C018504C207BBD86003526A2 /* searchTableViewController.swift in Sources */,
 				C018501E207BBCD7003526A2 /* AppDelegate.swift in Sources */,
 			);
