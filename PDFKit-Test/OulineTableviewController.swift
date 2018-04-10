@@ -45,7 +45,6 @@ class OulineTableviewController: UITableViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
@@ -133,7 +132,6 @@ extension OulineTableviewController {
             if node!.numberOfChildren > 0 {
                 removeChildren(parent: node!)
                 
-                // remove self
                 if let i = data.index(of: node!) {
                     data.remove(at: i)
                 }

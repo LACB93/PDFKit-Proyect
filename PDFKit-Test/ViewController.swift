@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        toolView.frame = CGRect(x: 110, y: view.frame.height - 640, width: self.view.frame.width - 240, height: 40)
+        toolView.frame = CGRect(x: 110, y: view.frame.height - 700, width: self.view.frame.width - 240, height: 40)
         
         pdfview = PDFView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         
@@ -71,7 +71,6 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
