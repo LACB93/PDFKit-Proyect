@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        toolView.frame = CGRect(x: 110, y: view.frame.height - 650, width: self.view.frame.width - 240, height: 40)
+        toolView.frame = CGRect(x: 120, y: view.frame.height - 70, width: self.view.frame.width - 240, height: 40)
         
-        pdfview = PDFView(frame: CGRect(x: 0, y: 80, width: view.frame.width, height: view.frame.height))
+        pdfview = PDFView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - 80))
         
         let url = Bundle.main.url(forResource: "iOSCourse", withExtension: "pdf")
         pdfdocument = PDFDocument(url: url!)
@@ -36,12 +36,6 @@ class ViewController: UIViewController {
         toolView.searchBtn.addTarget(self, action: #selector(searchBtnClick), for: .touchUpInside)
         toolView.outlineBtn.addTarget(self, action: #selector(outlineBtnClick), for: .touchUpInside)
         
-    }
-    
-    @objc func tapGesture(_ gestureRecognizer: UITapGestureRecognizer) {
-        UIView.animate(withDuration: CATransaction.animationDuration()) { [weak self] in
-            self?.toolView.alpha = 1 - (self?.toolView.alpha)!
-        }
     }
     
     @objc func outlineBtnClick(sender: UIButton) {
