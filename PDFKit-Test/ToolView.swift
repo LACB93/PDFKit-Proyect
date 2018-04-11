@@ -19,7 +19,7 @@ class ToolView: UIView {
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        layer.borderWidth = 1
+        layer.borderWidth = 2
         layer.borderColor = UIColor.black.cgColor
         layer.cornerRadius = 5
     }
