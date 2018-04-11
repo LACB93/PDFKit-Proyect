@@ -13,16 +13,14 @@ class ViewController: UIViewController {
     var pdfdocument: PDFDocument?
     
     var pdfview: PDFView!
-    var pdfthumbView: PDFThumbnailView!
     let toolView = ToolView.instanceFromNib()
-    weak var observe : NSObjectProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        toolView.frame = CGRect(x: 110, y: view.frame.height - 700, width: self.view.frame.width - 240, height: 40)
+        toolView.frame = CGRect(x: 110, y: view.frame.height - 650, width: self.view.frame.width - 240, height: 40)
         
-        pdfview = PDFView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        pdfview = PDFView(frame: CGRect(x: 0, y: 80, width: view.frame.width, height: view.frame.height))
         
         let url = Bundle.main.url(forResource: "iOSCourse", withExtension: "pdf")
         pdfdocument = PDFDocument(url: url!)
